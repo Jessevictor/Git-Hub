@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lobster&family=Modak&display=swap"
     rel="stylesheet">
@@ -12,8 +14,8 @@
 
         <div class="col-md-6" style="margin-top: 50px; color: white; font-size: 25px;">
             <h2 style="margin-bottom: 20px; font-size: 50px; font-family: 'Josefin Sans', sans-serif;
-            font-family: 'Lobster', cursive;
-            font-family: 'Modak', cursive;; color: rgb(255, 81, 0);">Profile Information</h2>
+   font-family: 'Permanent Marker', cursive;
+   font-family: 'Permanent Marker', cursive;; color: rgb(0, 255, 21);">Profile Information</h2>
             <p> <span>Name:</span>
                 {{user.name}}
             </p>
@@ -46,11 +48,12 @@
     <div class="container" style="text-align: center;">
 
         <div class="row" style="font-family: 'Josefin Sans', sans-serif;
-        font-family: 'Lobster', cursive;; font-size:20px;">
+        font-family: 'Lobster', cursive;;  font-size:20px;">
+         
             <div class="col-md-6" *ngFor="let repos of userrepos">
-                <div class="card mt-3">
+                <div class="card mt-3" style="opacity: 0.5;">
 
-                    <p class="text-center pt-4 para">
+                    <p class="text-center pt-4 para" style="opacity: 0.5;">
                         {{repos.name}}
                     </p>
 
@@ -65,7 +68,7 @@
                     <p>
                         {{repos.created_at}}
                     </p>
-                    <div class="card-footer text-center">
+                    <div class="card-footer text-center" style="opacity: 1;">
                         <a href="{{ repos.html_url }}" class="btn btn-success" target="_blank">View on GitHub</a>
                     </div>
 
